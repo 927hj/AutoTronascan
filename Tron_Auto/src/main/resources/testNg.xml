@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="待消费监控接口测试套件">
+
+    <test name="待消费监控接口测试用例">
+        <classes>
+            <class name="com.tron.cases.LoadTxInfoTest">
+                <methods>
+                    <include name="loadTrue"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+    <!--添加监听，产出测试报告-->
+    <listeners >
+        <listener class-name="com.tron.config.ExtentTestNGIReporterListener"/>
+
+    </listeners>
+</suite>
