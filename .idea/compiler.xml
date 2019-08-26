@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Tron_Auto" />
+        <module name="AutoTronscan" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AutoTronscan" target="8" />
       <module name="Tron_Auto" target="8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="AutoTronscan" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
       <module name="Tron_Auto" options="-parameters -Xlint:unchecked -Xlint:deprecation" />
     </option>
   </component>

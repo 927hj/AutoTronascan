@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/AutoTronscan.iml" filepath="$PROJECT_DIR$/.idea/AutoTronscan.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Tron_Auto/Tron_Auto.iml" filepath="$PROJECT_DIR$/Tron_Auto/Tron_Auto.iml" />
     </modules>
   </component>
 </project>

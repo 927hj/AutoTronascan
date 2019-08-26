@@ -3,9 +3,10 @@ package com.tron.utils;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.*;
 
+//import java.io.IOException;
 import java.io.IOException;
 import java.io.Reader;
-import java.sql.Connection;
+
 
 /**
  * ${params}
@@ -17,7 +18,8 @@ public class DatabaseUtil {
 
     public static SqlSession getSqlSession() throws IOException {
         //获取配置的资源文件
-        Reader reader = Resources.getResourceAsReader("databaseConfig.xml");
+
+        Reader reader = Resources.getResourceAsReader("src/main/resources/databaseConfig.xml");
         //获取到的SqlSessionFactory,使用类加载器加载xml文件
         SqlSessionFactory factory = new SqlSessionFactoryBuilder().build(reader);
         //获取到sqlsession对象，该就能执行配置文件中的sql语句
