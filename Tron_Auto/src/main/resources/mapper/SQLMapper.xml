@@ -6,6 +6,6 @@
 
     <!--id唯一，并且与test用例中selectone的参数名相同-->
     <select id="loadCase"  resultType="com.tron.model.LoadTxInfoCase">
-         select * from loadtxinfo where id=1;
+         select * from loadtxinfo where id=#{id};
     </select>
 </mapper>

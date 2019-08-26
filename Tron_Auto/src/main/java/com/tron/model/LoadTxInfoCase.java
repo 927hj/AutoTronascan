@@ -12,7 +12,7 @@ import lombok.Data;
 public class LoadTxInfoCase {
     private int id;
     private String knock;
-    private Boolean expected;
+    private int expected;
 
 
 }
