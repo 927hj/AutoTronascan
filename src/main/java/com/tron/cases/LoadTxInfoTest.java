@@ -12,6 +12,8 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
+import static com.tron.utils.DatabaseUtil.getSqlSession;
+
 /**
  * ${params}
  *
@@ -27,14 +29,14 @@ public class LoadTxInfoTest {
     }
     @Test(groups = "loadTrue",description = "用户登陆成功")
     public void loadTrue() throws IOException {
-        SqlSession session = DatabaseUtil.getSqlSession();
+        SqlSession session = getSqlSession();
         LoadTxInfoCase loadCase= session.selectOne("loadCase","1");
-        System.out.println(loadCase);
+        System.out.println(loadCase.toString());
         System.out.println(TestConfig.loadtxinfoUrl);
     }
     @Test(groups = "loadFalse",description = "用户登陆失败")
     public void loadFalse() throws IOException {
-        SqlSession session = DatabaseUtil.getSqlSession();
+        SqlSession session = getSqlSession();
         LoadTxInfoCase loadCase= session.selectOne("loadCase","2");
         System.out.println(loadCase.toString());
         System.out.println(TestConfig.loadtxinfoUrl);

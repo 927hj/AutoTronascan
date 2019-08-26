@@ -35,6 +35,6 @@ public class LoadTxInfoCase {
     }
 
     public String toString(){
-        return "knock"+knock+ "；expected="+expected;
+        return "knock="+knock+ "；expected="+expected;
     }
 }

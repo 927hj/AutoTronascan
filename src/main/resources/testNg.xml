@@ -6,6 +6,7 @@
             <class name="com.tron.cases.LoadTxInfoTest">
                 <methods>
                     <include name="loadTrue"/>
+                    <include name="loadFalse"/>
                 </methods>
             </class>
         </classes>
