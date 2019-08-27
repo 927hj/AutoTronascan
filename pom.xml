@@ -142,6 +142,7 @@
                         </compilerArgs>
                     </configuration>
                 </plugin>
+                <!--maven打包配置-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>
@@ -149,7 +150,7 @@
                     <configuration>
                         <testFailureIgnore>true</testFailureIgnore>
                         <suiteXmlFiles>
-                            <file>res/testNG.xml</file>
+                            ./src/main/resources/testNg.xml
                         </suiteXmlFiles>
                         <!--<workingDirectory>target/</workingDirectory>-->
                     </configuration>

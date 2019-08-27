@@ -19,7 +19,7 @@ public class ConfigFile {
     public static String getUrl(InterfaceName name){
         String address = bundle.getString("test.url");
         String uri = "";
-        //最终的测试地址
+        //最终的测试地址6。6
         String testUrl;
         if(name == InterfaceName.LOADTXINFO){
             uri = bundle.getString("loadtxinfo.uri");
