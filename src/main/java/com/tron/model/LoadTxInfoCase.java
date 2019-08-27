@@ -12,7 +12,7 @@ import lombok.Data;
 public class LoadTxInfoCase {
     private int id;
     private String knock;
-    private int expected;
+    private Long expected;
 
     public int getId(){
         return id;
@@ -27,10 +27,10 @@ public class LoadTxInfoCase {
     public void setKnock(String knock ){
         this.knock = knock;
     }
-    public int getExpected(){
+    public Long getExpected(){
         return expected;
     }
-    public void setKnock(int expected ){
+    public void setKnock(Long expected ){
         this.expected = expected;
     }
 
